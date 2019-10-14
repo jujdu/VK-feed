@@ -31,24 +31,23 @@ _OBJC_IVAR_$_VKDocs._photo_100
 _OBJC_IVAR_$_VKDocs._photo_130
 _OBJC_IVAR_$_VKDocs._date
 _OBJC_IVAR_$_VKDocs._type
-Apple clang version 11.0.0 (clang-1100.0.33.8)
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKDocs.m
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk
-library/Source/API/models/VKDocs.m
-library/Source/API/models/VKDocs.h
+Apple LLVM version 10.0.0 (clang-1000.11.45.5)
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKDocs.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKDocs.h
 +[VKHTTPOperation operationWithRequest:]
 +[VKHTTPOperation networkRequestThreadEntryPoint:]
 +[VKHTTPOperation networkRequestThread]
 ___39+[VKHTTPOperation networkRequestThread]_block_invoke
-___copy_helper_block_e4_
-___destroy_helper_block_e4_
+___copy_helper_block_
+___destroy_helper_block_
 -[VKHTTPOperation initWithURLRequest:]
 -[VKHTTPOperation dealloc]
 -[VKHTTPOperation outputStream]
 -[VKHTTPOperation setShouldExecuteAsBackgroundTaskWithExpirationHandler:]
 ___73-[VKHTTPOperation setShouldExecuteAsBackgroundTaskWithExpirationHandler:]_block_invoke
-___copy_helper_block_e4_20b24s28w
-___destroy_helper_block_e4_20s24s28w
+___copy_helper_block_.72
+___destroy_helper_block_.73
 -[VKHTTPOperation setUploadProgressBlock:]
 -[VKHTTPOperation setDownloadProgressBlock:]
 -[VKHTTPOperation responseString]
@@ -64,11 +63,13 @@ ___destroy_helper_block_e4_20s24s28w
 -[VKHTTPOperation cancelConnection]
 -[VKHTTPOperation connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:]
 ___90-[VKHTTPOperation connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:]_block_invoke
-___copy_helper_block_e4_20s
-___destroy_helper_block_e4_20s
+___copy_helper_block_.223
+___destroy_helper_block_.224
 -[VKHTTPOperation connection:didReceiveResponse:]
 -[VKHTTPOperation connection:didReceiveData:]
 ___45-[VKHTTPOperation connection:didReceiveData:]_block_invoke
+___copy_helper_block_.246
+___destroy_helper_block_.247
 -[VKHTTPOperation connectionDidFinishLoading:]
 -[VKHTTPOperation connection:didFailWithError:]
 -[VKHTTPOperation initWithCoder:]
@@ -81,11 +82,13 @@ ___45-[VKHTTPOperation connection:didReceiveData:]_block_invoke
 -[VKHTTPOperation setCompletionBlockWithSuccess:failure:]
 ___57-[VKHTTPOperation setCompletionBlockWithSuccess:failure:]_block_invoke
 ___57-[VKHTTPOperation setCompletionBlockWithSuccess:failure:]_block_invoke_2
-___copy_helper_block_e4_20b24s
-___destroy_helper_block_e4_20s24s
-___57-[VKHTTPOperation setCompletionBlockWithSuccess:failure:]_block_invoke.309
-___copy_helper_block_e4_20s24b28b
-___destroy_helper_block_e4_20s24s28s
+___copy_helper_block_.316
+___destroy_helper_block_.317
+___57-[VKHTTPOperation setCompletionBlockWithSuccess:failure:]_block_invoke.321
+___copy_helper_block_.322
+___destroy_helper_block_.323
+___copy_helper_block_.325
+___destroy_helper_block_.326
 -[VKHTTPOperation loadingRequest]
 -[VKHTTPOperation setLoadingRequest:]
 -[VKHTTPOperation runLoopModes]
@@ -124,20 +127,21 @@ ___destroy_helper_block_e4_20s24s28s
 -[VKHTTPOperation .cxx_destruct]
 _networkRequestThread._networkRequestThread
 _networkRequestThread.oncePredicate
-___block_descriptor_24_e4__e5_v4?0l
+___block_descriptor_tmp
 _OBJC_IVAR_$_VKHTTPOperation._backgroundTaskIdentifier
 _OBJC_IVAR_$_VKHTTPOperation._successCallbackQueue
 _OBJC_IVAR_$_VKHTTPOperation._failureCallbackQueue
 _OBJC_IVAR_$_VKHTTPOperation._outputStream
-___block_descriptor_32_e4_20bs24s28w_e5_v4?0l
+___block_descriptor_tmp.74
 _OBJC_IVAR_$_VKHTTPOperation._responseString
 _OBJC_IVAR_$_VKHTTPOperation._responseJson
 _OBJC_IVAR_$_VKHTTPOperation._responseStringEncoding
-___block_descriptor_36_e4_20s_e5_v4?0l
-___block_descriptor_28_e4_20s_e5_v4?0l
+___block_descriptor_tmp.225
+___block_descriptor_tmp.248
 _OBJC_IVAR_$_VKHTTPOperation._error
-___block_descriptor_28_e4_20bs24s_e5_v4?0l
-___block_descriptor_32_e4_20s24bs28bs_e5_v4?0l
+___block_descriptor_tmp.318
+___block_descriptor_tmp.324
+___block_descriptor_tmp.327
 _OBJC_IVAR_$_VKHTTPOperation._loadingRequest
 _OBJC_IVAR_$_VKHTTPOperation._runLoopModes
 _OBJC_IVAR_$_VKHTTPOperation._vkRequest
@@ -151,38 +155,29 @@ _OBJC_IVAR_$_VKHTTPOperation._uploadProgress
 _OBJC_IVAR_$_VKHTTPOperation._downloadProgress
 _OBJC_IVAR_$_VKHTTPOperation._HTTPError
 _OBJC_IVAR_$_VKHTTPOperation._JSONError
-__OBJC_PROTOCOL_$_NSObject
-__OBJC_LABEL_PROTOCOL_$_NSObject
-__OBJC_PROTOCOL_$_NSURLConnectionDelegate
-__OBJC_LABEL_PROTOCOL_$_NSURLConnectionDelegate
-__OBJC_PROTOCOL_$_NSURLConnectionDataDelegate
-__OBJC_LABEL_PROTOCOL_$_NSURLConnectionDataDelegate
-__OBJC_PROTOCOL_$_NSCoding
-__OBJC_LABEL_PROTOCOL_$_NSCoding
-__OBJC_PROTOCOL_$_NSCopying
-__OBJC_LABEL_PROTOCOL_$_NSCopying
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKHTTPOperation.m
-library/Source/Core/VKHTTPOperation.m
-library/Source/Core/VKHTTPOperation.h
-__destroy_helper_block_e4_20s24s28s
-__copy_helper_block_e4_20s24b28b
-__57-[VKHTTPOperation setCompletionBlockWithSuccess:failure:]_block_invoke.309
-__destroy_helper_block_e4_20s24s
-__copy_helper_block_e4_20b24s
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_NSURLConnectionDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSURLConnectionDelegate
+l_OBJC_PROTOCOL_$_NSURLConnectionDataDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSURLConnectionDataDelegate
+l_OBJC_PROTOCOL_$_NSCoding
+l_OBJC_LABEL_PROTOCOL_$_NSCoding
+l_OBJC_PROTOCOL_$_NSCopying
+l_OBJC_LABEL_PROTOCOL_$_NSCopying
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKHTTPOperation.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKHTTPOperation.h
+__destroy_helper_block_
+__copy_helper_block_
+__57-[VKHTTPOperation setCompletionBlockWithSuccess:failure:]_block_invoke.321
 __57-[VKHTTPOperation setCompletionBlockWithSuccess:failure:]_block_invoke_2
 __57-[VKHTTPOperation setCompletionBlockWithSuccess:failure:]_block_invoke
 __45-[VKHTTPOperation connection:didReceiveData:]_block_invoke
-__destroy_helper_block_e4_20s
-__copy_helper_block_e4_20s
 __90-[VKHTTPOperation connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:]_block_invoke
 VKGetMediaTypeAndSubtypeWithString
-__destroy_helper_block_e4_20s24s28w
-__copy_helper_block_e4_20b24s28w
 __73-[VKHTTPOperation setShouldExecuteAsBackgroundTaskWithExpirationHandler:]_block_invoke
-__destroy_helper_block_e4_
-__copy_helper_block_e4_
 __39+[VKHTTPOperation networkRequestThread]_block_invoke
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/usr/include/dispatch/once.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/dispatch/once.h
 -[VKSharedTransitioningObject animationControllerForPresentedController:presentingController:sourceController:]
 -[VKSharedTransitioningObject animationControllerForDismissedController:]
 -[VKSharedTransitioningObject interactionControllerForPresentation:]
@@ -190,21 +185,19 @@ __39+[VKHTTPOperation networkRequestThread]_block_invoke
 -[AnimatedTransitioning transitionDuration:]
 -[AnimatedTransitioning animateTransition:]
 ___43-[AnimatedTransitioning animateTransition:]_block_invoke
-___copy_helper_block_e4_20s24s28s
-___43-[AnimatedTransitioning animateTransition:]_block_invoke.84
+___43-[AnimatedTransitioning animateTransition:]_block_invoke.86
+___copy_helper_block_.91
+___destroy_helper_block_.92
 -[AnimatedTransitioning isPresenting]
 -[AnimatedTransitioning setIsPresenting:]
-__OBJC_PROTOCOL_$_UIViewControllerTransitioningDelegate
-__OBJC_LABEL_PROTOCOL_$_UIViewControllerTransitioningDelegate
-___block_descriptor_32_e4_20s24s28s_e5_v4?0l
-___block_descriptor_32_e4_20s24s28s_e7_v8?0c4l
-__OBJC_PROTOCOL_$_UIViewControllerAnimatedTransitioning
-__OBJC_LABEL_PROTOCOL_$_UIViewControllerAnimatedTransitioning
+l_OBJC_PROTOCOL_$_UIViewControllerTransitioningDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIViewControllerTransitioningDelegate
+___block_descriptor_tmp.94
 _OBJC_IVAR_$_AnimatedTransitioning._isPresenting
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Views/VKSharedTransitioningObject.m
-library/Source/Views/VKSharedTransitioningObject.m
-__43-[AnimatedTransitioning animateTransition:]_block_invoke.84
-__copy_helper_block_e4_20s24s28s
+l_OBJC_PROTOCOL_$_UIViewControllerAnimatedTransitioning
+l_OBJC_LABEL_PROTOCOL_$_UIViewControllerAnimatedTransitioning
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Views/VKSharedTransitioningObject.m
+__43-[AnimatedTransitioning animateTransition:]_block_invoke.86
 __43-[AnimatedTransitioning animateTransition:]_block_invoke
 +[VKImageParameters pngImage]
 +[VKImageParameters jpegImageWithQuality:]
@@ -216,9 +209,8 @@ __43-[AnimatedTransitioning animateTransition:]_block_invoke
 -[VKImageParameters setJpegQuality:]
 _OBJC_IVAR_$_VKImageParameters._imageType
 _OBJC_IVAR_$_VKImageParameters._jpegQuality
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Image/VKImageParameters.m
-library/Source/Image/VKImageParameters.h
-library/Source/Image/VKImageParameters.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Image/VKImageParameters.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Image/VKImageParameters.h
 -[VKAudio id]
 -[VKAudio setId:]
 -[VKAudio owner_id]
@@ -259,9 +251,8 @@ _OBJC_IVAR_$_VKAudio._genre_id
 _OBJC_IVAR_$_VKAudio._fromCache
 _OBJC_IVAR_$_VKAudio._ignoreCache
 _OBJC_IVAR_$_VKAudios._user
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKAudio.m
-library/Source/API/models/VKAudio.m
-library/Source/API/models/VKAudio.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKAudio.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKAudio.h
 -[VKSchool initWithDictionary:]
 -[VKSchool id]
 -[VKSchool setId:]
@@ -298,9 +289,8 @@ _OBJC_IVAR_$_VKSchool._Mclass
 _OBJC_IVAR_$_VKSchool._speciality
 _OBJC_IVAR_$_VKSchool._type
 _OBJC_IVAR_$_VKSchool._type_str
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKSchool.m
-library/Source/API/models/VKSchool.m
-library/Source/API/models/VKSchool.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKSchool.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKSchool.h
 -[VKResponse description]
 -[VKResponse request]
 -[VKResponse setRequest:]
@@ -315,26 +305,26 @@ _OBJC_IVAR_$_VKResponse._request
 _OBJC_IVAR_$_VKResponse._json
 _OBJC_IVAR_$_VKResponse._parsedModel
 _OBJC_IVAR_$_VKResponse._responseString
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKResponse.m
-library/Source/Core/VKResponse.m
-library/Source/Core/VKResponse.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKResponse.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKResponse.h
 -[VKJSONOperation setCompletionBlockWithSuccess:failure:]
 ___57-[VKJSONOperation setCompletionBlockWithSuccess:failure:]_block_invoke
 ___57-[VKJSONOperation setCompletionBlockWithSuccess:failure:]_block_invoke_2
 ___57-[VKJSONOperation setCompletionBlockWithSuccess:failure:]_block_invoke.7
-___copy_helper_block_e4_20b24s28s
-___block_descriptor_32_e4_20bs24s28s_e5_v4?0l
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKJSONOperation.m
-__copy_helper_block_e4_20b24s28s
+___copy_helper_block_.8
+___destroy_helper_block_.9
+___copy_helper_block_.11
+___destroy_helper_block_.12
+___block_descriptor_tmp.10
+___block_descriptor_tmp.13
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKJSONOperation.m
 __57-[VKJSONOperation setCompletionBlockWithSuccess:failure:]_block_invoke.7
-library/Source/Core/VKJSONOperation.m
 __57-[VKJSONOperation setCompletionBlockWithSuccess:failure:]_block_invoke_2
 __57-[VKJSONOperation setCompletionBlockWithSuccess:failure:]_block_invoke
 -[VKUploadWallPhotoRequest initWithImage:parameters:userId:groupId:]
 -[VKUploadWallPhotoRequest getServerRequest]
 -[VKUploadWallPhotoRequest getSaveRequest:]
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/upload/VKUploadWallPhotoRequest.m
-library/Source/API/upload/VKUploadWallPhotoRequest.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/upload/VKUploadWallPhotoRequest.m
 -[VKApiBase init]
 -[VKApiBase getMethodGroup]
 -[VKApiBase setMethodGroup:]
@@ -342,8 +332,7 @@ library/Source/API/upload/VKUploadWallPhotoRequest.m
 -[VKApiBase prepareRequestWithMethodName:parameters:modelClass:]
 -[VKApiBase .cxx_destruct]
 _OBJC_IVAR_$_VKApiBase._methodGroup
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiBase.m
-library/Source/API/methods/VKApiBase.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiBase.m
 +[VKActivity activityCategory]
 +[VKActivity vkShareExtensionEnabled]
 -[VKActivity activityType]
@@ -352,18 +341,12 @@ library/Source/API/methods/VKApiBase.m
 -[VKActivity canPerformWithActivityItems:]
 -[VKActivity prepareWithActivityItems:]
 ___39-[VKActivity prepareWithActivityItems:]_block_invoke
-___copy_helper_block_e4_20w
-___destroy_helper_block_e4_20w
 -[VKActivity activityViewController]
 -[VKActivity shareDialog]
 -[VKActivity setShareDialog:]
 -[VKActivity .cxx_destruct]
-___block_descriptor_24_e4_20w_e35_v12?0"VKShareDialogController"4i8l
 _OBJC_IVAR_$_VKActivity._shareDialog
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Views/VKActivity.m
-library/Source/Views/VKActivity.m
-__destroy_helper_block_e4_20w
-__copy_helper_block_e4_20w
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Views/VKActivity.m
 __39-[VKActivity prepareWithActivityItems:]_block_invoke
 -[VKPropertyHelper initWith:]
 -[VKPropertyHelper propertyName]
@@ -387,13 +370,12 @@ ___21-[VKApiObject parse:]_block_invoke
 ___Block_byref_object_copy_
 ___Block_byref_object_dispose_
 ___21-[VKApiObject parse:]_block_invoke.79
-___copy_helper_block_e4_20r
-___destroy_helper_block_e4_20r
 -[VKApiObject enumPropertiesWithBlock:]
 -[VKApiObject ignoredProperties]
 -[VKApiObject serialize]
 ___24-[VKApiObject serialize]_block_invoke
-___copy_helper_block_e4_20s24s
+___copy_helper_block_.133
+___destroy_helper_block_.134
 +[VKApiObject createWithDictionary:]
 +[VKApiObject createWithArray:]
 -[VKApiObject setValue:forUndefinedKey:]
@@ -410,26 +392,21 @@ _OBJC_IVAR_$_VKPropertyHelper._isModel
 _parse:.classesProperties
 _parse:.classSemaphore
 _parse:.onceToken
-___block_descriptor_20_e5_v4?0l
 ___block_literal_global
-___block_descriptor_24_e4_20r_e28_v12?0"VKPropertyHelper"4i8l
-___block_descriptor_28_e4_20s24s_e28_v12?0"VKPropertyHelper"4i8l
+___block_descriptor_tmp.86
+___block_descriptor_tmp.135
 _OBJC_IVAR_$_VKApiObject._fields
-__OBJC_PROTOCOL_$_VKApiObject
-__OBJC_LABEL_PROTOCOL_$_VKApiObject
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKApiObject.m
-library/Source/API/models/VKApiObject.m
-library/Source/API/models/VKApiObject.h
-__copy_helper_block_e4_20s24s
+l_OBJC_PROTOCOL_$_VKApiObject
+l_OBJC_LABEL_PROTOCOL_$_VKApiObject
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKApiObject.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKApiObject.h
 __24-[VKApiObject serialize]_block_invoke
-__destroy_helper_block_e4_20r
-__copy_helper_block_e4_20r
 __21-[VKApiObject parse:]_block_invoke.79
 __Block_byref_object_dispose_
 __Block_byref_object_copy_
 __21-[VKApiObject parse:]_block_invoke
 VK_ENSURE_DICT
-library/Source/Utils/VKUtil.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Utils/VKUtil.h
 getPropertyType
 getPropertyName
 +[VKHTTPClient getClient]
@@ -442,13 +419,15 @@ getPropertyName
 -[VKHTTPClient enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:]
 ___82-[VKHTTPClient enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:]_block_invoke
 ___82-[VKHTTPClient enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:]_block_invoke_2
-___copy_helper_block_e4_20b24s28r
-___destroy_helper_block_e4_20s24s28r
-___82-[VKHTTPClient enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:]_block_invoke.163
-___82-[VKHTTPClient enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:]_block_invoke_2.164
+___copy_helper_block_.157
+___destroy_helper_block_.158
+___82-[VKHTTPClient enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:]_block_invoke.168
+___82-[VKHTTPClient enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:]_block_invoke_2.169
 ___82-[VKHTTPClient enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:]_block_invoke_3
-___copy_helper_block_e4_20b24s28b32r
-___destroy_helper_block_e4_20s24s28s32r
+___copy_helper_block_.176
+___destroy_helper_block_.177
+___copy_helper_block_.179
+___destroy_helper_block_.180
 -[VKHTTPClient encodeWithCoder:]
 -[VKHTTPClient initWithCoder:]
 -[VKHTTPClient operationQueue]
@@ -457,21 +436,17 @@ ___destroy_helper_block_e4_20s24s28s32r
 -[VKHTTPClient setDefaultHeaders:]
 -[VKHTTPClient .cxx_destruct]
 ___clientInstance
-___block_descriptor_32_e4_20bs24s28r_e5_v4?0l
-___block_descriptor_20_e14_c16?04I8^c12l
-___block_descriptor_36_e4_20bs24s28bs32r_e5_v4?0l
+___block_descriptor_tmp.159
+___block_descriptor_tmp.171
+___block_descriptor_tmp.178
+___block_descriptor_tmp.181
 _OBJC_IVAR_$_VKHTTPClient._operationQueue
 _OBJC_IVAR_$_VKHTTPClient._defaultHeaders
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKHTTPClient.m
-library/Source/Core/VKHTTPClient.m
-library/Source/Core/VKHTTPClient.h
-__destroy_helper_block_e4_20s24s28s32r
-__copy_helper_block_e4_20b24s28b32r
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKHTTPClient.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKHTTPClient.h
 __82-[VKHTTPClient enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:]_block_invoke_3
-__82-[VKHTTPClient enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:]_block_invoke_2.164
-__82-[VKHTTPClient enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:]_block_invoke.163
-__destroy_helper_block_e4_20s24s28r
-__copy_helper_block_e4_20b24s28r
+__82-[VKHTTPClient enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:]_block_invoke_2.169
+__82-[VKHTTPClient enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:]_block_invoke.168
 __82-[VKHTTPClient enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:]_block_invoke_2
 __82-[VKHTTPClient enqueueBatchOfHTTPRequestOperations:progressBlock:completionBlock:]_block_invoke
 -[VKAuthorizationResult token]
@@ -487,9 +462,8 @@ _OBJC_IVAR_$_VKAuthorizationResult._token
 _OBJC_IVAR_$_VKAuthorizationResult._user
 _OBJC_IVAR_$_VKAuthorizationResult._error
 _OBJC_IVAR_$_VKAuthorizationResult._state
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/VKAuthorizationResult.m
-library/Source/VKAuthorizationResult.m
-library/Source/VKAuthorizationResult.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/VKAuthorizationResult.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/VKAuthorizationResult.h
 +[VKApi users]
 +[VKApi wall]
 +[VKApi photos]
@@ -500,9 +474,8 @@ library/Source/VKAuthorizationResult.h
 +[VKApi uploadWallPhotoRequest:parameters:userId:groupId:]
 +[VKApi uploadAlbumPhotoRequest:parameters:albumId:groupId:]
 +[VKApi uploadMessagePhotoRequest:parameters:]
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/VKApi.m
-library/Source/API/VKApi.m
--[VKNavigationController preferredStatusBarStyle]
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/VKApi.m
+-[UINavigationController(LastControllerBar) preferredStatusBarStyle]
 +[VKAuthorizeController presentForAuthorizeWithAppId:andPermissions:revokeAccess:displayType:]
 +[VKAuthorizeController presentForValidation:]
 +[VKAuthorizeController presentThisController:]
@@ -512,20 +485,29 @@ library/Source/API/VKApi.m
 -[VKAuthorizeController initWith:andPermissions:revokeAccess:displayType:]
 -[VKAuthorizeController viewDidLoad]
 -[VKAuthorizeController startLoading]
--[VKAuthorizeController webView:decidePolicyForNavigationAction:decisionHandler:]
-___81-[VKAuthorizeController webView:decidePolicyForNavigationAction:decisionHandler:]_block_invoke
--[VKAuthorizeController webView:didFailNavigation:withError:]
-___61-[VKAuthorizeController webView:didFailNavigation:withError:]_block_invoke
+-[VKAuthorizeController webView:shouldStartLoadWithRequest:navigationType:]
+___75-[VKAuthorizeController webView:shouldStartLoadWithRequest:navigationType:]_block_invoke
+-[VKAuthorizeController webView:didFailLoadWithError:]
+___54-[VKAuthorizeController webView:didFailLoadWithError:]_block_invoke
+___copy_helper_block_.257
+___destroy_helper_block_.258
 -[VKAuthorizeController setRightBarButtonActivity]
--[VKAuthorizeController webView:didFinishNavigation:]
-___53-[VKAuthorizeController webView:didFinishNavigation:]_block_invoke
+-[VKAuthorizeController webViewDidFinishLoad:]
+___46-[VKAuthorizeController webViewDidFinishLoad:]_block_invoke
+___copy_helper_block_.268
+___destroy_helper_block_.269
 -[VKAuthorizeController makeViewport]
 -[VKAuthorizeController cancelAuthorization:]
 ___45-[VKAuthorizeController cancelAuthorization:]_block_invoke
+___copy_helper_block_.279
+___destroy_helper_block_.280
 -[VKAuthorizeController dismissWithCompletion:]
 ___47-[VKAuthorizeController dismissWithCompletion:]_block_invoke
-___copy_helper_block_e4_20s24b
-___47-[VKAuthorizeController dismissWithCompletion:]_block_invoke.293
+___copy_helper_block_.302
+___destroy_helper_block_.303
+___47-[VKAuthorizeController dismissWithCompletion:]_block_invoke.307
+___copy_helper_block_.308
+___destroy_helper_block_.309
 -[VKAuthorizeController preferredStatusBarStyle]
 -[VKAuthorizeController webView]
 -[VKAuthorizeController setWebView:]
@@ -574,18 +556,18 @@ _OBJC_IVAR_$_VKAuthorizeController._webView
 _OBJC_IVAR_$_VKAuthorizeController._appId
 _OBJC_IVAR_$_VKAuthorizeController._scope
 _OBJC_IVAR_$_VKAuthorizeController._redirectUri
-___block_descriptor_28_e4_20s24s_e5_v4?0l
 _OBJC_IVAR_$_VKAuthorizeController._lastRequest
+___block_descriptor_tmp.259
+___block_descriptor_tmp.270
 _OBJC_IVAR_$_VKAuthorizeController._validationError
-___block_descriptor_24_e4_20s_e5_v4?0l
+___block_descriptor_tmp.281
 _OBJC_IVAR_$_VKAuthorizeController._finished
 _OBJC_IVAR_$_VKAuthorizeController._internalNavigationController
-___block_descriptor_28_e4_20s24bs_e5_v4?0l
+___block_descriptor_tmp.304
+___block_descriptor_tmp.310
 _OBJC_IVAR_$_VKAuthorizeController._statusBar
-__OBJC_PROTOCOL_$_WKUIDelegate
-__OBJC_LABEL_PROTOCOL_$_WKUIDelegate
-__OBJC_PROTOCOL_$_WKNavigationDelegate
-__OBJC_LABEL_PROTOCOL_$_WKNavigationDelegate
+l_OBJC_PROTOCOL_$_UIWebViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIWebViewDelegate
 _OBJC_IVAR_$_VKAuthorizationContext._clientId
 _OBJC_IVAR_$_VKAuthorizationContext._displayType
 _OBJC_IVAR_$_VKAuthorizationContext._scope
@@ -594,22 +576,19 @@ _OBJC_IVAR_$_VKAuthorizationContext._authPrefix
 _OBJC_IVAR_$_VKAuthorizationContext._redirectUri
 _OBJC_IVAR_$_VKAuthorizationContext._responseType
 _OBJC_IVAR_$_VKAuthorizationContext._usingVkApp
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Views/VKAuthorizeController.m
-library/Source/Views/VKAuthorizeController.m
-library/Source/Views/VKAuthorizeController.h
-__47-[VKAuthorizeController dismissWithCompletion:]_block_invoke.293
-__copy_helper_block_e4_20s24b
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Views/VKAuthorizeController.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Views/VKAuthorizeController.h
+__47-[VKAuthorizeController dismissWithCompletion:]_block_invoke.307
 __47-[VKAuthorizeController dismissWithCompletion:]_block_invoke
 __45-[VKAuthorizeController cancelAuthorization:]_block_invoke
-__53-[VKAuthorizeController webView:didFinishNavigation:]_block_invoke
-__61-[VKAuthorizeController webView:didFailNavigation:withError:]_block_invoke
-__81-[VKAuthorizeController webView:decidePolicyForNavigationAction:decisionHandler:]_block_invoke
+__46-[VKAuthorizeController webViewDidFinishLoad:]_block_invoke
+__54-[VKAuthorizeController webView:didFailLoadWithError:]_block_invoke
+__75-[VKAuthorizeController webView:shouldStartLoadWithRequest:navigationType:]_block_invoke
 CGRectMake
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[VKUploadMessagesPhotoRequest getServerRequest]
 -[VKUploadMessagesPhotoRequest getSaveRequest:]
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/upload/VKUploadMessagesPhotoRequest.m
-library/Source/API/upload/VKUploadMessagesPhotoRequest.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/upload/VKUploadMessagesPhotoRequest.m
 -[VKLastSeen time]
 -[VKLastSeen setTime:]
 -[VKLastSeen platform]
@@ -889,9 +868,8 @@ _OBJC_IVAR_$_VKExports._twitter
 _OBJC_IVAR_$_VKExports._facebook
 _OBJC_IVAR_$_VKExports._livejournal
 _OBJC_IVAR_$_VKExports._instagram
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKUser.m
-library/Source/API/models/VKUser.m
-library/Source/API/models/VKUser.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKUser.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKUser.h
 +[VKUploadImage uploadImageWithData:andParams:]
 +[VKUploadImage uploadImageWithImage:andParams:]
 -[VKUploadImage imageData]
@@ -904,20 +882,17 @@ library/Source/API/models/VKUser.h
 _OBJC_IVAR_$_VKUploadImage._imageData
 _OBJC_IVAR_$_VKUploadImage._sourceImage
 _OBJC_IVAR_$_VKUploadImage._parameters
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Image/VKUploadImage.m
-library/Source/Image/VKUploadImage.m
-library/Source/Image/VKUploadImage.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Image/VKUploadImage.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Image/VKUploadImage.h
 -[VKApiGroups getById:]
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiGroups.m
-library/Source/API/methods/VKApiGroups.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiGroups.m
 -[VKApiPhotos getUploadServer:]
 -[VKApiPhotos getUploadServer:andGroupId:]
 -[VKApiPhotos getWallUploadServer]
 -[VKApiPhotos getWallUploadServer:]
 -[VKApiPhotos saveWallPhoto:]
 -[VKApiPhotos save:]
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiPhotos.m
-library/Source/API/methods/VKApiPhotos.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiPhotos.m
 -[VKGeoPlace id]
 -[VKGeoPlace setId:]
 -[VKGeoPlace title]
@@ -1120,9 +1095,8 @@ _OBJC_IVAR_$_VKGroup._invited_by
 _OBJC_IVAR_$_VKGroup._invite_state
 _OBJC_IVAR_$_VKGroup._deactivated
 _OBJC_IVAR_$_VKGroup._blacklisted
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKGroup.m
-library/Source/API/models/VKGroup.m
-library/Source/API/models/VKGroup.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKGroup.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKGroup.h
 -[VKUniversity id]
 -[VKUniversity setId:]
 -[VKUniversity country]
@@ -1158,20 +1132,17 @@ _OBJC_IVAR_$_VKUniversity._chair_name
 _OBJC_IVAR_$_VKUniversity._graduation
 _OBJC_IVAR_$_VKUniversity._education_form
 _OBJC_IVAR_$_VKUniversity._education_status
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKUniversity.m
-library/Source/API/models/VKUniversity.m
-library/Source/API/models/VKUniversity.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKUniversity.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKUniversity.h
 -[VKApiWall post:]
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiWall.m
-library/Source/API/methods/VKApiWall.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiWall.m
 +[VKBundle vkLibraryResourcesBundle]
 ___36+[VKBundle vkLibraryResourcesBundle]_block_invoke
 +[VKBundle vkLibraryImageNamed:]
 +[VKBundle localizedString:]
 _vkLibraryResourcesBundle.onceToken
 _vkLibraryResourcesBundle.myLibraryResourcesBundle
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/VKBundle.m
-library/Source/VKBundle.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/VKBundle.m
 __36+[VKBundle vkLibraryResourcesBundle]_block_invoke
 -[VKApiDocs get]
 -[VKApiDocs get:]
@@ -1195,8 +1166,7 @@ __36+[VKBundle vkLibraryResourcesBundle]_block_invoke
 -[VKApiDocs edit:title:tags:]
 -[VKApiDocs edit:docID:title:]
 -[VKApiDocs edit:docID:title:tags:]
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiDocs.m
-library/Source/API/methods/VKApiDocs.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiDocs.m
 -[VKPhotoSize src]
 -[VKPhotoSize setSrc:]
 -[VKPhotoSize width]
@@ -1215,14 +1185,12 @@ _OBJC_IVAR_$_VKPhotoSize._width
 _OBJC_IVAR_$_VKPhotoSize._height
 _OBJC_IVAR_$_VKPhotoSize._type
 _OBJC_IVAR_$_VKPhotoSizes.sizesDictionary
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKPhotoSize.m
-library/Source/API/models/VKPhotoSize.m
-library/Source/API/models/VKPhotoSize.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKPhotoSize.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKPhotoSize.h
 -[VKUploadPhotoRequest initWithImage:parameters:albumId:groupId:]
 -[VKUploadPhotoRequest getServerRequest]
 -[VKUploadPhotoRequest getSaveRequest:]
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/upload/VKUploadPhotoRequest.m
-library/Source/API/upload/VKUploadPhotoRequest.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/upload/VKUploadPhotoRequest.m
 +[VKAccessToken tokenWithToken:secret:userId:]
 +[VKAccessToken tokenFromUrlString:]
 -[VKAccessToken initWithToken:secret:userId:]
@@ -1261,12 +1229,10 @@ library/Source/API/upload/VKUploadPhotoRequest.m
 -[VKAccessTokenMutable setLocalUser:]
 _OBJC_IVAR_$_VKAccessToken._email
 _OBJC_IVAR_$_VKAccessToken._created
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/VKAccessToken.m
-library/Source/VKAccessToken.m
-library/Source/VKAccessToken.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/VKAccessToken.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/VKAccessToken.h
 -[NSString(VKSMD5) vks_md5]
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Utils/NSString+MD5.m
-library/Source/Utils/NSString+MD5.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Utils/NSString+MD5.m
 -[VKRequestTiming description]
 -[VKRequestTiming started]
 -[VKRequestTiming loaded]
@@ -1300,27 +1266,45 @@ library/Source/Utils/NSString+MD5.m
 -[VKRequest getPreparedRequest]
 -[VKRequest createExecutionOperation]
 ___37-[VKRequest createExecutionOperation]_block_invoke
-___37-[VKRequest createExecutionOperation]_block_invoke.204
+___37-[VKRequest createExecutionOperation]_block_invoke.206
 ___37-[VKRequest createExecutionOperation]_block_invoke_2
+___copy_helper_block_.221
+___destroy_helper_block_.222
+___copy_helper_block_.232
+___destroy_helper_block_.233
 -[VKRequest start]
 -[VKRequest operationDidStart:]
 -[VKRequest provideResponse:responseString:]
 -[VKRequest provideError:]
 -[VKRequest finishRequest]
 ___26-[VKRequest finishRequest]_block_invoke
-___26-[VKRequest finishRequest]_block_invoke_2
+___copy_helper_block_.295
+___destroy_helper_block_.296
+___26-[VKRequest finishRequest]_block_invoke.298
+___copy_helper_block_.301
+___destroy_helper_block_.302
 -[VKRequest repeat]
 -[VKRequest cancel]
 -[VKRequest setupProgress:]
 ___27-[VKRequest setupProgress:]_block_invoke
-___27-[VKRequest setupProgress:]_block_invoke.305
+___copy_helper_block_.315
+___destroy_helper_block_.316
+___27-[VKRequest setupProgress:]_block_invoke.321
 -[VKRequest addExtraParameters:]
 -[VKRequest generateSig:token:]
 -[VKRequest processCommonError:]
 ___32-[VKRequest processCommonError:]_block_invoke
-___32-[VKRequest processCommonError:]_block_invoke_2
-___32-[VKRequest processCommonError:]_block_invoke_3
-___32-[VKRequest processCommonError:]_block_invoke_4
+___copy_helper_block_.358
+___destroy_helper_block_.359
+___32-[VKRequest processCommonError:]_block_invoke.361
+___copy_helper_block_.364
+___destroy_helper_block_.365
+___32-[VKRequest processCommonError:]_block_invoke.367
+___copy_helper_block_.370
+___destroy_helper_block_.371
+___32-[VKRequest processCommonError:]_block_invoke.375
+___copy_helper_block_.379
+___destroy_helper_block_.380
 -[VKRequest language]
 ___21-[VKRequest language]_block_invoke
 -[VKRequest responseQueue]
@@ -1393,18 +1377,24 @@ _OBJC_IVAR_$_VKRequest._photoObjects
 _OBJC_IVAR_$_VKRequest._debugTiming
 _OBJC_IVAR_$_VKRequest._requestTiming
 _OBJC_IVAR_$_VKRequest._executionOperation
-___block_descriptor_24_e4_20s_e27_v12?0"VKHTTPOperation"48l
 _OBJC_IVAR_$_VKRequest._completeBlock
 _OBJC_IVAR_$_VKRequest._errorBlock
-___block_descriptor_24_e4_20s_e36_v12?0"VKHTTPOperation"4"NSError"8l
+___block_descriptor_tmp.224
+___block_descriptor_tmp.235
 _OBJC_IVAR_$_VKRequest._waitUntilDoneSemaphore
 _OBJC_IVAR_$_VKRequest._modelClass
+___block_descriptor_tmp.297
+___block_descriptor_tmp.303
 _OBJC_IVAR_$_VKRequest._attemptsUsed
-___block_descriptor_24_e4_20s_e13_v24?0I4q8q16l
 _OBJC_IVAR_$_VKRequest._methodParameters
 _OBJC_IVAR_$_VKRequest._methodName
+___block_descriptor_tmp.360
+___block_descriptor_tmp.366
+___block_descriptor_tmp.372
+___block_descriptor_tmp.381
 _language.sysLang
 _language.onceToken
+___block_descriptor_tmp.386
 _OBJC_IVAR_$_VKRequest._responseQueue
 _OBJC_IVAR_$_VKRequest._progressBlock
 _OBJC_IVAR_$_VKRequest._attempts
@@ -1419,28 +1409,29 @@ _OBJC_IVAR_$_VKRequest._response
 _OBJC_IVAR_$_VKRequest._error
 _OBJC_IVAR_$_VKRequest._requestLang
 _OBJC_IVAR_$_VKRequest._specialToken
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKRequest.m
-library/Source/Core/VKRequest.m
-library/Source/Core/VKRequest.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKRequest.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKRequest.h
 __21-[VKRequest language]_block_invoke
-__32-[VKRequest processCommonError:]_block_invoke_4
-__32-[VKRequest processCommonError:]_block_invoke_3
-__32-[VKRequest processCommonError:]_block_invoke_2
+__32-[VKRequest processCommonError:]_block_invoke.375
+__32-[VKRequest processCommonError:]_block_invoke.367
+__32-[VKRequest processCommonError:]_block_invoke.361
 __32-[VKRequest processCommonError:]_block_invoke
-__27-[VKRequest setupProgress:]_block_invoke.305
+__27-[VKRequest setupProgress:]_block_invoke.321
 __27-[VKRequest setupProgress:]_block_invoke
-__26-[VKRequest finishRequest]_block_invoke_2
+__26-[VKRequest finishRequest]_block_invoke.298
 __26-[VKRequest finishRequest]_block_invoke
 __37-[VKRequest createExecutionOperation]_block_invoke_2
-__37-[VKRequest createExecutionOperation]_block_invoke.204
+__37-[VKRequest createExecutionOperation]_block_invoke.206
 __37-[VKRequest createExecutionOperation]_block_invoke
 vksdk_dispatch_on_main_queue_now
 -[VKCaptchaView dealloc]
 -[VKCaptchaView initWithFrame:andError:]
 ___40-[VKCaptchaView initWithFrame:andError:]_block_invoke
-___40-[VKCaptchaView initWithFrame:andError:]_block_invoke.72
+___40-[VKCaptchaView initWithFrame:andError:]_block_invoke.74
 -[VKCaptchaView deviceDidRotate:]
 ___33-[VKCaptchaView deviceDidRotate:]_block_invoke
+___copy_helper_block_.90
+___destroy_helper_block_.91
 -[VKCaptchaView doneButtonPressed:]
 -[VKCaptchaView didMoveToSuperview]
 -[VKCaptchaView textFieldShouldReturn:]
@@ -1449,20 +1440,19 @@ _OBJC_IVAR_$_VKCaptchaView._error
 _OBJC_IVAR_$_VKCaptchaView._imageLoadingActivity
 _OBJC_IVAR_$_VKCaptchaView._captchaImage
 _OBJC_IVAR_$_VKCaptchaView._captchaTextField
-___block_descriptor_20_e36_v12?0"VKHTTPOperation"4"NSError"8l
+___block_descriptor_tmp.76
+___block_descriptor_tmp.93
 _OBJC_IVAR_$_VKCaptchaView._doneButton
 _OBJC_IVAR_$_VKCaptchaView._infoLabel
-__OBJC_PROTOCOL_$_UITextFieldDelegate
-__OBJC_LABEL_PROTOCOL_$_UITextFieldDelegate
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Views/VKCaptchaView.m
-library/Source/Views/VKCaptchaView.m
+l_OBJC_PROTOCOL_$_UITextFieldDelegate
+l_OBJC_LABEL_PROTOCOL_$_UITextFieldDelegate
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Views/VKCaptchaView.m
 __33-[VKCaptchaView deviceDidRotate:]_block_invoke
-__40-[VKCaptchaView initWithFrame:andError:]_block_invoke.72
+__40-[VKCaptchaView initWithFrame:andError:]_block_invoke.74
 __40-[VKCaptchaView initWithFrame:andError:]_block_invoke
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiConst.m
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/VKPermissions.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiConst.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/VKPermissions.m
 VKParseVkPermissionsFromInteger
-library/Source/VKPermissions.m
 -[VKPhoto attachmentString]
 -[VKPhoto id]
 -[VKPhoto setId:]
@@ -1508,9 +1498,8 @@ _OBJC_IVAR_$_VKPhoto._height
 _OBJC_IVAR_$_VKPhoto._text
 _OBJC_IVAR_$_VKPhoto._date
 _OBJC_IVAR_$_VKPhoto._sizes
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKPhoto.m
-library/Source/API/models/VKPhoto.m
-library/Source/API/models/VKPhoto.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKPhoto.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKPhoto.h
 -[VKApiUsers get]
 -[VKApiUsers get:]
 -[VKApiUsers search:]
@@ -1520,13 +1509,14 @@ library/Source/API/models/VKPhoto.h
 -[VKApiUsers getSubscriptions:]
 -[VKApiUsers getFollowers]
 -[VKApiUsers getFollowers:]
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiUsers.m
-library/Source/API/methods/VKApiUsers.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiUsers.m
 -[VKBatchRequest initWithRequests:]
 -[VKBatchRequest initWithRequestsArray:]
 -[VKBatchRequest executeWithResultBlock:errorBlock:]
 ___52-[VKBatchRequest executeWithResultBlock:errorBlock:]_block_invoke
 ___52-[VKBatchRequest executeWithResultBlock:errorBlock:]_block_invoke.28
+___copy_helper_block_.31
+___destroy_helper_block_.32
 -[VKBatchRequest cancel]
 -[VKBatchRequest provideResponse:]
 -[VKBatchRequest provideError:]
@@ -1537,14 +1527,12 @@ ___52-[VKBatchRequest executeWithResultBlock:errorBlock:]_block_invoke.28
 -[VKBatchRequest .cxx_destruct]
 _OBJC_IVAR_$_VKBatchRequest._requests
 _OBJC_IVAR_$_VKBatchRequest._responses
-___block_descriptor_28_e4_20s24bs_e19_v8?0"VKResponse"4l
-___block_descriptor_28_e4_20s24bs_e16_v8?0"NSError"4l
+___block_descriptor_tmp.34
 _OBJC_IVAR_$_VKBatchRequest._canceled
 _OBJC_IVAR_$_VKBatchRequest._completeBlock
 _OBJC_IVAR_$_VKBatchRequest._errorBlock
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/VKBatchRequest.m
-library/Source/VKBatchRequest.m
-library/Source/VKBatchRequest.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/VKBatchRequest.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/VKBatchRequest.h
 __52-[VKBatchRequest executeWithResultBlock:errorBlock:]_block_invoke.28
 __52-[VKBatchRequest executeWithResultBlock:errorBlock:]_block_invoke
 -[VKRelative id]
@@ -1555,9 +1543,8 @@ __52-[VKBatchRequest executeWithResultBlock:errorBlock:]_block_invoke
 -[VKRelativities objectClass]
 _OBJC_IVAR_$_VKRelative._id
 _OBJC_IVAR_$_VKRelative._type
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKRelative.m
-library/Source/API/models/VKRelative.m
-library/Source/API/models/VKRelative.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKRelative.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKRelative.h
 -[VKCounters friends]
 -[VKCounters setFriends:]
 -[VKCounters messages]
@@ -1616,9 +1603,8 @@ _OBJC_IVAR_$_VKCounters._subscriptions
 _OBJC_IVAR_$_VKCounters._documents
 _OBJC_IVAR_$_VKCounters._topics
 _OBJC_IVAR_$_VKCounters._pages
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKCounters.m
-library/Source/API/models/VKCounters.m
-library/Source/API/models/VKCounters.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKCounters.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKCounters.h
 +[VKCaptchaViewController captchaControllerWithError:]
 -[VKCaptchaViewController loadView]
 -[VKCaptchaViewController captchaDidAnswered]
@@ -1635,12 +1621,11 @@ ___37-[VKCaptchaViewController presentIn:]_block_invoke
 _OBJC_IVAR_$_VKCaptchaViewController._captchaError
 _OBJC_IVAR_$_VKCaptchaViewController._transitionDelegate
 _OBJC_IVAR_$_VKCaptchaViewController._captchaView
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Views/VKCaptchaViewController.m
-library/Source/Views/VKCaptchaViewController.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Views/VKCaptchaViewController.m
 CGSizeMake
 __37-[VKCaptchaViewController presentIn:]_block_invoke
 UIInterfaceOrientationIsLandscape
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h
 +[VKError errorWithCode:]
 +[VKError errorWithJson:]
 +[VKError errorWithQuery:]
@@ -1683,9 +1668,8 @@ _OBJC_IVAR_$_VKError._captchaSid
 _OBJC_IVAR_$_VKError._captchaImg
 _OBJC_IVAR_$_VKError._redirectUri
 _OBJC_IVAR_$_VKError._json
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKError.m
-library/Source/Core/VKError.m
-library/Source/Core/VKError.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKError.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKError.h
 -[OrderedDictionary init]
 -[OrderedDictionary initWithCapacity:]
 -[OrderedDictionary copy]
@@ -1699,8 +1683,7 @@ library/Source/Core/VKError.h
 -[OrderedDictionary keyAtIndex:]
 -[OrderedDictionary descriptionWithLocale:indent:]
 -[OrderedDictionary .cxx_destruct]
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Utils/OrderedDictionary.m
-library/Source/Utils/OrderedDictionary.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Utils/OrderedDictionary.m
 VKDescriptionForObject
 -[VKLikes count]
 -[VKLikes setCount:]
@@ -1715,9 +1698,8 @@ _OBJC_IVAR_$_VKLikes._count
 _OBJC_IVAR_$_VKLikes._user_likes
 _OBJC_IVAR_$_VKLikes._can_like
 _OBJC_IVAR_$_VKLikes._can_publish
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKLikes.m
-library/Source/API/models/VKLikes.m
-library/Source/API/models/VKLikes.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKLikes.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKLikes.h
 -[VKPhotoAttachmentCell initWithFrame:]
 -[VKPhotoAttachmentCell setProgress:]
 -[VKPhotoAttachmentCell hideProgress]
@@ -1843,15 +1825,23 @@ ___39-[VKShareDialogView textViewDidChange:]_block_invoke
 -[VKShareDialogControllerInternal viewWillDisappear:]
 -[VKShareDialogControllerInternal viewWillAppear:]
 ___50-[VKShareDialogControllerInternal viewWillAppear:]_block_invoke
+___copy_helper_block_.764
+___destroy_helper_block_.765
 -[VKShareDialogControllerInternal setAuthorizationState:]
 -[VKShareDialogControllerInternal willAnimateRotationToInterfaceOrientation:duration:]
 -[VKShareDialogControllerInternal prepare]
 ___42-[VKShareDialogControllerInternal prepare]_block_invoke
+___copy_helper_block_.812
+___destroy_helper_block_.813
 -[VKShareDialogControllerInternal rightBarButtonItems]
 -[VKShareDialogControllerInternal close:]
 -[VKShareDialogControllerInternal sendMessage:]
 ___47-[VKShareDialogControllerInternal sendMessage:]_block_invoke
-___47-[VKShareDialogControllerInternal sendMessage:]_block_invoke.881
+___copy_helper_block_.890
+___destroy_helper_block_.891
+___47-[VKShareDialogControllerInternal sendMessage:]_block_invoke.893
+___copy_helper_block_.905
+___destroy_helper_block_.906
 -[VKShareDialogControllerInternal openSettings:]
 -[VKShareDialogControllerInternal authorize:]
 -[VKShareDialogControllerInternal vkSdkNeedCaptchaEnter:]
@@ -1861,18 +1851,36 @@ ___47-[VKShareDialogControllerInternal sendMessage:]_block_invoke.881
 -[VKShareDialogControllerInternal vkSdkUserAuthorizationFailed]
 -[VKShareDialogControllerInternal createAttachments]
 ___52-[VKShareDialogControllerInternal createAttachments]_block_invoke
-___52-[VKShareDialogControllerInternal createAttachments]_block_invoke.949
-___52-[VKShareDialogControllerInternal createAttachments]_block_invoke.979
+___copy_helper_block_.955
+___destroy_helper_block_.956
+___52-[VKShareDialogControllerInternal createAttachments]_block_invoke.960
+___copy_helper_block_.967
+___destroy_helper_block_.968
+___52-[VKShareDialogControllerInternal createAttachments]_block_invoke.993
 ___52-[VKShareDialogControllerInternal createAttachments]_block_invoke_2
 ___52-[VKShareDialogControllerInternal createAttachments]_block_invoke_3
 ___52-[VKShareDialogControllerInternal createAttachments]_block_invoke_4
-___52-[VKShareDialogControllerInternal createAttachments]_block_invoke.1022
-___52-[VKShareDialogControllerInternal createAttachments]_block_invoke.1033
-___52-[VKShareDialogControllerInternal createAttachments]_block_invoke.1040
+___copy_helper_block_.1033
+___destroy_helper_block_.1034
+___copy_helper_block_.1038
+___destroy_helper_block_.1039
+___copy_helper_block_.1041
+___destroy_helper_block_.1042
+___52-[VKShareDialogControllerInternal createAttachments]_block_invoke.1045
+___copy_helper_block_.1046
+___destroy_helper_block_.1047
+___52-[VKShareDialogControllerInternal createAttachments]_block_invoke.1059
+___copy_helper_block_.1066
+___destroy_helper_block_.1067
+___copy_helper_block_.1069
+___destroy_helper_block_.1070
+___52-[VKShareDialogControllerInternal createAttachments]_block_invoke.1072
 -[VKShareDialogControllerInternal collectionView:numberOfItemsInSection:]
 -[VKShareDialogControllerInternal collectionView:layout:sizeForItemAtIndexPath:]
 -[VKShareDialogControllerInternal collectionView:cellForItemAtIndexPath:]
 ___73-[VKShareDialogControllerInternal collectionView:cellForItemAtIndexPath:]_block_invoke
+___copy_helper_block_.1087
+___destroy_helper_block_.1088
 -[VKShareDialogControllerInternal removeAttachIfExists:]
 -[VKShareDialogControllerInternal textViewDidChange:]
 -[VKShareDialogControllerInternal parent]
@@ -1920,7 +1928,6 @@ _OBJC_IVAR_$_VKShareDialogController._targetShareDialog
 _OBJC_IVAR_$_VKShareDialogController._internalNavigation
 _OBJC_IVAR_$_VKShareDialogController._requestedScope
 _OBJC_IVAR_$_VKShareDialogController._transitionDelegate
-___block_descriptor_20_e24_c12?04"NSDictionary"8l
 _OBJC_IVAR_$_VKShareDialogController._uploadImages
 _OBJC_IVAR_$_VKShareDialogController.defaultBarStyle
 _OBJC_IVAR_$_VKShareDialogController._vkImages
@@ -1943,57 +1950,61 @@ _OBJC_IVAR_$_VKShareDialogView._privacyButton
 _OBJC_IVAR_$_VKShareDialogView._textView
 _OBJC_IVAR_$_VKShareDialogView._attachmentsCollection
 _OBJC_IVAR_$_VKShareDialogView.lastTextViewHeight
+___block_descriptor_tmp.572
 _OBJC_IVAR_$_VKShareDialogView._linkAttachView
-__OBJC_PROTOCOL_$_UIScrollViewDelegate
-__OBJC_LABEL_PROTOCOL_$_UIScrollViewDelegate
-__OBJC_PROTOCOL_$_UITextViewDelegate
-__OBJC_LABEL_PROTOCOL_$_UITextViewDelegate
+l_OBJC_PROTOCOL_$_UIScrollViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIScrollViewDelegate
+l_OBJC_PROTOCOL_$_UITextViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UITextViewDelegate
 _OBJC_IVAR_$_VKShareDialogControllerInternal.imageProcessingQueue
-___block_descriptor_24_e4_20s_e19_v12?0I4"NSError"8l
-___block_descriptor_24_e4_20s_e19_v8?0"VKResponse"4l
+___block_descriptor_tmp.767
+___block_descriptor_tmp.815
 _OBJC_IVAR_$_VKShareDialogControllerInternal._attachmentsArray
-___block_descriptor_28_e4_20s24s_e19_v8?0"VKResponse"4l
-___block_descriptor_28_e4_20s24s_e16_v8?0"NSError"4l
-___block_descriptor_32_e4_20s24s28s_e19_v8?0"VKResponse"4l
-___block_descriptor_32_e4_20s24s28s_e16_v8?0"NSError"4l
-___block_descriptor_28_e4_20s24s_e27_v12?0"VKHTTPOperation"48l
-___block_descriptor_28_e4_20s24s_e36_v12?0"VKHTTPOperation"4"NSError"8l
-___block_descriptor_20_e16_v8?0"NSError"4l
-___block_literal_global.1041
-___block_descriptor_24_e4_20w_e13_v24?0i4q8q16l
+___block_descriptor_tmp.892
+___block_descriptor_tmp.908
+___block_descriptor_tmp.957
+___block_descriptor_tmp.969
+___block_descriptor_tmp.1035
+___block_descriptor_tmp.1040
+___block_descriptor_tmp.1044
+___block_descriptor_tmp.1049
+___block_descriptor_tmp.1068
+___block_descriptor_tmp.1071
+___block_descriptor_tmp.1073
+___block_literal_global.1074
+___block_descriptor_tmp.1090
 _OBJC_IVAR_$_VKShareDialogControllerInternal._parent
 _OBJC_IVAR_$_VKShareDialogControllerInternal._sendButton
 _OBJC_IVAR_$_VKShareDialogControllerInternal._postSettings
 _OBJC_IVAR_$_VKShareDialogControllerInternal._prepared
 _OBJC_IVAR_$_VKShareDialogControllerInternal._oldDelegate
-__OBJC_PROTOCOL_$_UICollectionViewDataSource
-__OBJC_LABEL_PROTOCOL_$_UICollectionViewDataSource
-__OBJC_PROTOCOL_$_UICollectionViewDelegate
-__OBJC_LABEL_PROTOCOL_$_UICollectionViewDelegate
-__OBJC_PROTOCOL_$_UICollectionViewDelegateFlowLayout
-__OBJC_LABEL_PROTOCOL_$_UICollectionViewDelegateFlowLayout
-__OBJC_PROTOCOL_$_VKSdkDelegate
-__OBJC_LABEL_PROTOCOL_$_VKSdkDelegate
-__OBJC_PROTOCOL_$_VKSdkUIDelegate
-__OBJC_LABEL_PROTOCOL_$_VKSdkUIDelegate
+l_OBJC_PROTOCOL_$_UICollectionViewDataSource
+l_OBJC_LABEL_PROTOCOL_$_UICollectionViewDataSource
+l_OBJC_PROTOCOL_$_UICollectionViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UICollectionViewDelegate
+l_OBJC_PROTOCOL_$_UICollectionViewDelegateFlowLayout
+l_OBJC_LABEL_PROTOCOL_$_UICollectionViewDelegateFlowLayout
+l_OBJC_PROTOCOL_$_VKSdkDelegate
+l_OBJC_LABEL_PROTOCOL_$_VKSdkDelegate
+l_OBJC_PROTOCOL_$_VKSdkUIDelegate
+l_OBJC_LABEL_PROTOCOL_$_VKSdkUIDelegate
 _OBJC_IVAR_$_VKShareSettingsController._currentSettings
 _OBJC_IVAR_$_VKShareSettingsController._rows
 _OBJC_IVAR_$_VKShareLink._title
 _OBJC_IVAR_$_VKShareLink._link
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Views/VKShareDialogController.m
-library/Source/Views/VKShareDialogController.m
-library/Source/Views/VKShareDialogController.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Views/VKShareDialogController.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Views/VKShareDialogController.h
 __73-[VKShareDialogControllerInternal collectionView:cellForItemAtIndexPath:]_block_invoke
-__52-[VKShareDialogControllerInternal createAttachments]_block_invoke.1040
-__52-[VKShareDialogControllerInternal createAttachments]_block_invoke.1033
-__52-[VKShareDialogControllerInternal createAttachments]_block_invoke.1022
+__52-[VKShareDialogControllerInternal createAttachments]_block_invoke.1072
+__52-[VKShareDialogControllerInternal createAttachments]_block_invoke.1059
+__52-[VKShareDialogControllerInternal createAttachments]_block_invoke.1045
 __52-[VKShareDialogControllerInternal createAttachments]_block_invoke_4
 __52-[VKShareDialogControllerInternal createAttachments]_block_invoke_3
 __52-[VKShareDialogControllerInternal createAttachments]_block_invoke_2
-__52-[VKShareDialogControllerInternal createAttachments]_block_invoke.979
-__52-[VKShareDialogControllerInternal createAttachments]_block_invoke.949
+__52-[VKShareDialogControllerInternal createAttachments]_block_invoke.993
+__52-[VKShareDialogControllerInternal createAttachments]_block_invoke.960
 __52-[VKShareDialogControllerInternal createAttachments]_block_invoke
-__47-[VKShareDialogControllerInternal sendMessage:]_block_invoke.881
+__47-[VKShareDialogControllerInternal sendMessage:]_block_invoke.893
 __47-[VKShareDialogControllerInternal sendMessage:]_block_invoke
 VK_ENSURE_NUM
 __42-[VKShareDialogControllerInternal prepare]_block_invoke
@@ -2003,13 +2014,11 @@ __43-[VKShareDialogController setUploadImages:]_block_invoke
 UIInterfaceOrientationIsPortrait
 -[VKApiFriends get]
 -[VKApiFriends get:]
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiFriends.m
-library/Source/API/methods/VKApiFriends.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiFriends.m
 +[NSError(VKError) errorWithVkError:]
 -[NSError(VKError) copyWithVkError:]
 -[NSError(VKError) vkError]
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/NSError+VKError.m
-library/Source/Core/NSError+VKError.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/NSError+VKError.m
 -[VKUploadPhotoBase initWithImage:parameters:]
 -[VKUploadPhotoBase createExecutionOperation]
 -[VKUploadPhotoBase getServerRequest]
@@ -2029,12 +2038,15 @@ library/Source/Core/NSError+VKError.m
 +[VKUploadImageOperation operationWithUploadRequest:]
 -[VKUploadImageOperation start]
 ___31-[VKUploadImageOperation start]_block_invoke
-___copy_helper_block_e4_20b24w
-___destroy_helper_block_e4_20s24w
 ___31-[VKUploadImageOperation start]_block_invoke.78
 ___31-[VKUploadImageOperation start]_block_invoke_2
 ___31-[VKUploadImageOperation start]_block_invoke_3
-___copy_helper_block_e4_20s24w
+___copy_helper_block_.111
+___destroy_helper_block_.112
+___copy_helper_block_.117
+___destroy_helper_block_.118
+___copy_helper_block_.120
+___destroy_helper_block_.121
 -[VKUploadImageOperation finish]
 -[VKUploadImageOperation cancel]
 -[VKUploadImageOperation uploadRequest]
@@ -2048,19 +2060,16 @@ _OBJC_IVAR_$_VKUploadPhotoBase._userId
 _OBJC_IVAR_$_VKUploadPhotoBase._imageParameters
 _OBJC_IVAR_$_VKUploadPhotoBase._image
 _OBJC_IVAR_$_VKUploadImageOperation._uploadRequest
-___block_descriptor_28_e4_20bs24w_e16_v8?0"NSError"4l
-___block_descriptor_28_e4_20s24w_e19_v8?0"VKResponse"4l
+___block_descriptor_tmp.114
+___block_descriptor_tmp.119
+___block_descriptor_tmp.122
 _OBJC_IVAR_$_VKUploadImageOperation._lastLoadingRequest
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/upload/VKUploadPhotoBase.m
-library/Source/API/upload/VKUploadPhotoBase.m
-__copy_helper_block_e4_20s24w
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/upload/VKUploadPhotoBase.m
 __31-[VKUploadImageOperation start]_block_invoke_3
 __31-[VKUploadImageOperation start]_block_invoke_2
 __31-[VKUploadImageOperation start]_block_invoke.78
-__destroy_helper_block_e4_20s24w
-__copy_helper_block_e4_20b24w
 __31-[VKUploadImageOperation start]_block_invoke
-library/Source/API/upload/VKUploadPhotoBase.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/upload/VKUploadPhotoBase.h
 -[VKOperation init]
 -[VKOperation setState:]
 -[VKOperation isReady]
@@ -2080,12 +2089,10 @@ ___34-[VKOperation setCompletionBlock:]_block_invoke
 -[VKOperation .cxx_destruct]
 _OBJC_IVAR_$_VKOperation._state
 _OBJC_IVAR_$_VKOperation._wasCancelled
-___block_descriptor_28_e4_20bs24w_e5_v4?0l
 _OBJC_IVAR_$_VKOperation._lock
 _OBJC_IVAR_$_VKOperation._responseQueue
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKOperation.m
-library/Source/Core/VKOperation.m
-library/Source/Core/VKOperation.h
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKOperation.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKOperation.h
 __34-[VKOperation setCompletionBlock:]_block_invoke
 VKKeyPathFromOperationState
 VKStateTransitionIsValid
@@ -2104,8 +2111,7 @@ ___28+[VKUtil parseNumberString:]_block_invoke
 _parseNumberString:.onceToken
 _parseNumberString:.semaphore
 _parseNumberString:.formatter
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Utils/VKUtil.m
-library/Source/Utils/VKUtil.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Utils/VKUtil.m
 __28+[VKUtil parseNumberString:]_block_invoke
 +[VKRequestsScheduler instance]
 ___31+[VKRequestsScheduler instance]_block_invoke
@@ -2115,6 +2121,10 @@ ___31+[VKRequestsScheduler instance]_block_invoke
 -[VKRequestsScheduler scheduleRequest:]
 ___39-[VKRequestsScheduler scheduleRequest:]_block_invoke
 ___39-[VKRequestsScheduler scheduleRequest:]_block_invoke_2
+___copy_helper_block_.37
+___destroy_helper_block_.38
+___copy_helper_block_.40
+___destroy_helper_block_.41
 -[VKRequestsScheduler .cxx_destruct]
 _instance.sInstance
 _instance.onceToken
@@ -2122,8 +2132,9 @@ _OBJC_IVAR_$_VKRequestsScheduler._currentLimitPerSecond
 _OBJC_IVAR_$_VKRequestsScheduler._schedulerQueue
 _OBJC_IVAR_$_VKRequestsScheduler._enabled
 _OBJC_IVAR_$_VKRequestsScheduler._scheduleDict
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKRequestsScheduler.m
-library/Source/Core/VKRequestsScheduler.m
+___block_descriptor_tmp.39
+___block_descriptor_tmp.42
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKRequestsScheduler.m
 __39-[VKRequestsScheduler scheduleRequest:]_block_invoke_2
 __39-[VKRequestsScheduler scheduleRequest:]_block_invoke
 __31+[VKRequestsScheduler instance]_block_invoke
@@ -2144,22 +2155,25 @@ ___31+[VKSdk authorize:withOptions:]_block_invoke
 +[VKSdk processOpenURL:validation:]
 ___35+[VKSdk processOpenURL:validation:]_block_invoke
 ___35+[VKSdk processOpenURL:validation:]_block_invoke_2
-___35+[VKSdk processOpenURL:validation:]_block_invoke.153
-___35+[VKSdk processOpenURL:validation:]_block_invoke_2.156
-___copy_helper_block_e4_20s24s32s36b
-___destroy_helper_block_e4_20s24s32s36s
-___copy_helper_block_e4_24s28b
-___destroy_helper_block_e4_24s28s
-___35+[VKSdk processOpenURL:validation:]_block_invoke.189
-___copy_helper_block_e4_20s24b28s
+___copy_helper_block_.148
+___destroy_helper_block_.149
+___35+[VKSdk processOpenURL:validation:]_block_invoke.160
+___35+[VKSdk processOpenURL:validation:]_block_invoke_2.163
+___copy_helper_block_.175
+___destroy_helper_block_.176
+___copy_helper_block_.182
+___destroy_helper_block_.183
+___35+[VKSdk processOpenURL:validation:]_block_invoke.202
+___copy_helper_block_.205
+___destroy_helper_block_.206
 +[VKSdk processOpenURL:fromApplication:]
 +[VKSdk processOpenInternalURL:validation:]
 +[VKSdk forceLogout]
 +[VKSdk isLoggedIn]
 +[VKSdk wakeUpSession:completeBlock:]
 ___37+[VKSdk wakeUpSession:completeBlock:]_block_invoke
-___copy_helper_block_e4_20s24s28s36b
-___destroy_helper_block_e4_20s24s28s36s
+___copy_helper_block_.284
+___destroy_helper_block_.285
 -[VKSdk hasPermissions:]
 -[VKSdk updatePermissions:]
 +[VKSdk setSchedulerEnabled:]
@@ -2167,11 +2181,16 @@ ___destroy_helper_block_e4_20s24s28s36s
 -[VKSdk dealloc]
 -[VKSdk handleDidBecomeActive]
 ___30-[VKSdk handleDidBecomeActive]_block_invoke
+___copy_helper_block_.309
+___destroy_helper_block_.310
 -[VKSdk currentAppId]
 -[VKSdk requestSdkState:trackVisitor:token:]
 ___44-[VKSdk requestSdkState:trackVisitor:token:]_block_invoke
-___copy_helper_block_e4_20b
-___44-[VKSdk requestSdkState:trackVisitor:token:]_block_invoke.321
+___copy_helper_block_.342
+___destroy_helper_block_.343
+___44-[VKSdk requestSdkState:trackVisitor:token:]_block_invoke.346
+___copy_helper_block_.347
+___destroy_helper_block_.348
 -[VKSdk notifyUserAuthorizationFailed:]
 -[VKSdk resetSdkState]
 -[VKSdk notifyDelegate:obj:]
@@ -2211,49 +2230,42 @@ ___44-[VKSdk requestSdkState:trackVisitor:token:]_block_invoke.321
 _vkSdkInstance
 _kSpecialPermissions
 _initializeWithAppId:apiVersion:.onceToken
-___block_descriptor_20_e7_v8?0c4l
-___block_descriptor_44_e4_20s24s32s36bs_e30_v16?0"VKUser"4i8"NSError"12l
-___block_descriptor_32_e4_24s28bs_e34_v12?0"VKAccessToken"4"VKError"8l
-___block_descriptor_33_e4_20s24bs28s_e5_v4?0l
-___block_descriptor_40_e4_20s24s28s36bs_e30_v16?0"VKUser"4i8"NSError"12l
-___block_descriptor_24_e4_20bs_e19_v8?0"VKResponse"4l
-___block_descriptor_24_e4_20bs_e16_v8?0"NSError"4l
-__OBJC_PROTOCOL_$_SFSafariViewControllerDelegate
-__OBJC_LABEL_PROTOCOL_$_SFSafariViewControllerDelegate
+___block_descriptor_tmp.95
+___block_descriptor_tmp.150
+___block_descriptor_tmp.179
+___block_descriptor_tmp.186
+___block_descriptor_tmp.207
+___block_descriptor_tmp.287
+_OBJC_IVAR_$_VKSdk._sdkDelegates
+___block_descriptor_tmp.311
+_OBJC_IVAR_$_VKSdk._currentAppId
+___block_descriptor_tmp.345
+___block_descriptor_tmp.350
+_OBJC_IVAR_$_VKSdk._accessToken
 _OBJC_IVAR_$_VKSdk._uiDelegate
 _OBJC_IVAR_$_VKSdk._apiVersion
-_OBJC_IVAR_$_VKSdk._sdkDelegates
 _OBJC_IVAR_$_VKSdk._authState
 _OBJC_IVAR_$_VKSdk._lastKnownOptions
-_OBJC_IVAR_$_VKSdk._currentAppId
-_OBJC_IVAR_$_VKSdk._accessToken
 _OBJC_IVAR_$_VKSdk._presentedSafariViewController
 _OBJC_IVAR_$_VKSdk._permissions
+l_OBJC_PROTOCOL_$_SFSafariViewControllerDelegate
+l_OBJC_LABEL_PROTOCOL_$_SFSafariViewControllerDelegate
 _OBJC_IVAR_$_VKWeakDelegate.objectClass
 _OBJC_IVAR_$_VKWeakDelegate._weakTarget
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/VKSdk.m
-library/Source/VKSdk.m
-library/Source/VKSdk.h
-__44-[VKSdk requestSdkState:trackVisitor:token:]_block_invoke.321
-__copy_helper_block_e4_20b
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/VKSdk.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/VKSdk.h
+__44-[VKSdk requestSdkState:trackVisitor:token:]_block_invoke.346
 __44-[VKSdk requestSdkState:trackVisitor:token:]_block_invoke
 __30-[VKSdk handleDidBecomeActive]_block_invoke
-__destroy_helper_block_e4_20s24s28s36s
-__copy_helper_block_e4_20s24s28s36b
 __37+[VKSdk wakeUpSession:completeBlock:]_block_invoke
-__copy_helper_block_e4_20s24b28s
-__35+[VKSdk processOpenURL:validation:]_block_invoke.189
-__destroy_helper_block_e4_24s28s
-__copy_helper_block_e4_24s28b
-__destroy_helper_block_e4_20s24s32s36s
-__copy_helper_block_e4_20s24s32s36b
-__35+[VKSdk processOpenURL:validation:]_block_invoke_2.156
-__35+[VKSdk processOpenURL:validation:]_block_invoke.153
+__35+[VKSdk processOpenURL:validation:]_block_invoke.202
+__35+[VKSdk processOpenURL:validation:]_block_invoke_2.163
+__35+[VKSdk processOpenURL:validation:]_block_invoke.160
 __35+[VKSdk processOpenURL:validation:]_block_invoke_2
 __35+[VKSdk processOpenURL:validation:]_block_invoke
 __31+[VKSdk authorize:withOptions:]_block_invoke
 __40+[VKSdk initializeWithAppId:apiVersion:]_block_invoke
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKObject.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/Core/VKObject.m
 -[VKApiObjectArray initWithDictionary:]
 -[VKApiObjectArray initWithDictionary:objectClass:]
 -[VKApiObjectArray initWithArray:objectClass:]
@@ -2281,16 +2293,14 @@ __40+[VKSdk initializeWithAppId:apiVersion:]_block_invoke
 -[VKApiObjectArray .cxx_destruct]
 _OBJC_IVAR_$_VKApiObjectArray._count
 _OBJC_IVAR_$_VKApiObjectArray._items
-__OBJC_PROTOCOL_$_NSFastEnumeration
-__OBJC_LABEL_PROTOCOL_$_NSFastEnumeration
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKApiObjectArray.m
-library/Source/API/models/VKApiObjectArray.m
-library/Source/API/models/VKApiObjectArray.h
+l_OBJC_PROTOCOL_$_NSFastEnumeration
+l_OBJC_LABEL_PROTOCOL_$_NSFastEnumeration
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKApiObjectArray.m
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/models/VKApiObjectArray.h
 VK_ENSURE_ARRAY
 -[VKApiCaptcha force]
-/Users/jujdu/Desktop/Projects/VK-Feed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiCaptcha.m
-library/Source/API/methods/VKApiCaptcha.m
-/Users/jujdu/Library/Caches/org.carthage.CarthageKit/DerivedData/11.0_11A420a/vk-ios-sdk/1.5.1/Build/Intermediates.noindex/ArchiveIntermediates/Framework/IntermediateBuildFilesPath/VK-ios-sdk.build/Release-iphoneos/VKSdkFramework.build/DerivedSources/VKSdkFramework_vers.c
+/Users/alekseyparkhomenko/Desktop/VKNewsFeed/Carthage/Checkouts/vk-ios-sdk/library/Source/API/methods/VKApiCaptcha.m
+/Users/alekseyparkhomenko/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/vk-ios-sdk/1.4.6/Build/Intermediates.noindex/ArchiveIntermediates/Framework/IntermediateBuildFilesPath/VK-ios-sdk.build/Release-iphoneos/VKSdkFramework.build/DerivedSources/VKSdkFramework_vers.c
 __ZL15__ARCLite__loadv
 __ZL30add_image_hook_autoreleasepoolPK11mach_headerl
 __ZL34__arclite_objc_autoreleasePoolPushv
@@ -2303,7 +2313,6 @@ __ZL47__arclite_NSOrderedSet_objectAtIndexedSubscriptP12NSOrderedSetP13objc_sele
 __ZL58__arclite_NSMutableOrderedSet_setObject_atIndexedSubscriptP19NSMutableOrderedSetP13objc_selectorP11objc_objectj
 __ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
 __ZL18add_image_hook_ARCPK11mach_headerl
-__ZL27__arclite_objc_loadClassrefPP10objc_class
 __ZL36__arclite_object_setInstanceVariableP11objc_objectPKcPv
 __ZL24__arclite_object_setIvarP11objc_objectP9objc_ivarS0_
 __ZL21__arclite_object_copyP11objc_objectm
@@ -2361,11 +2370,11 @@ __ZL17_load_method_type
 __ZL23NSAutoreleasePool_class
 __ZZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
 __ZGVZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
-__OBJC_PROTOCOL_$___ARCLiteIndexedSubscripting__
-__OBJC_LABEL_PROTOCOL_$___ARCLiteIndexedSubscripting__
+l_OBJC_PROTOCOL_$___ARCLiteIndexedSubscripting__
+l_OBJC_LABEL_PROTOCOL_$___ARCLiteIndexedSubscripting__
 l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteIndexedSubscripting__
-__OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
-__OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
 l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
 __ZZL18add_image_hook_ARCPK11mach_headerlE7patches
 __ZGVZL18add_image_hook_ARCPK11mach_headerlE7patches
@@ -2396,15 +2405,14 @@ __ZL25original_protocol_getName
 __ZL36original_objc_copyClassNamesForImage
 __ZL12demangleLock
 __ZL9Demangled
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ --target=armv7-apple-ios4.3 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources-normal/armv7 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/armv7 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.o -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -mlinker-version=512.4 -march=armv7a
-/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm
-/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/armv7 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-70/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.o -mlinker-version=409.12 -march=armv7a
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-70/source/arclite.mm
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-70
 fixStringForCoreData
-source/arclite.mm
 cxxConstruct
 arclite_uninitialized_function
 scanMangledField
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.Internal.sdk/usr/include/_ctype.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.Internal.sdk/usr/include/_ctype.h
 __isctype
 demangledName
 copySwiftV1DemangledName
@@ -2475,7 +2483,6 @@ __arclite_object_setIvar
 isScannedOffset
 _ivar_getClass
 __arclite_object_setInstanceVariable
-__arclite_objc_loadClassref
 add_image_hook_ARC
 patch_t<void (id *, id)>
 patch_t<id (id)>
@@ -2483,7 +2490,6 @@ patch_t<void (id)>
 patch_t<id (id, unsigned long)>
 patch_t<void (id, objc_ivar *, id)>
 patch_t<objc_ivar *(id, const char *, void *)>
-patch_t<Class (Class *)>
 __arclite_NSMutableDictionary__setObject_forKeyedSubscript
 __arclite_NSMutableOrderedSet_setObject_atIndexedSubscript
 __arclite_NSOrderedSet_objectAtIndexedSubscript

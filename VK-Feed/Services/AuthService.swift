@@ -1,16 +1,16 @@
 //
 //  AuthService.swift
-//  VK-Feed
+//  VKNewsFeed
 //
-//  Created by Michael Sidoruk on 13.10.2019.
-//  Copyright © 2019 Michael Sidoruk. All rights reserved.
+//  Created by Алексей Пархоменко on 22/02/2019.
+//  Copyright © 2019 Алексей Пархоменко. All rights reserved.
 //
 
 import Foundation
 import VKSdkFramework
 
 protocol AuthServiceDelegate: class {
-    func authServiceShouldPresent(_ viewController: UIViewController)
+    func authServiceShouldShow(_ viewController: UIViewController)
     func authServiceSignIn()
     func authServiceDidSignInFail()
 }
@@ -64,7 +64,7 @@ final class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
     
     func vkSdkShouldPresent(_ controller: UIViewController!) {
         print(#function)
-        delegate?.authServiceShouldPresent(controller)
+        delegate?.authServiceShouldShow(controller)
     }
     
     func vkSdkNeedCaptchaEnter(_ captchaError: VKError!) {

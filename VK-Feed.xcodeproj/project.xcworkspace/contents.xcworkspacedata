@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:VK-Feed.xcodeproj">
+      location = "self:/Users/jujdu/Desktop/Projects/VK-Feed/VK-Feed.xcodeproj">
    </FileRef>
 </Workspace>
