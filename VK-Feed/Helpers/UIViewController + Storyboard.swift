@@ -2,8 +2,8 @@
 //  UIViewController + Storyboard.swift
 //  VKNewsFeed
 //
-//  Created by Алексей Пархоменко on 23/02/2019.
-//  Copyright © 2019 Алексей Пархоменко. All rights reserved.
+//  Created by Michael Sidoruk on 16/10/2019.
+//  Copyright © 2019 Michael Sidoruk. All rights reserved.
 //
 
 import Foundation
