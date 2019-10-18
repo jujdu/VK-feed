@@ -17,17 +17,20 @@ class NewsFeedInteractor: NewsFeedBusinessLogic {
     var presenter: NewsFeedPresentationLogic?
     var service: NewsFeedService?
     
+    private var fetcher: DataFetcher = NetworkDataFetcher.init(networking: NetworkService())
+    
     func makeRequest(request: NewsFeed.Model.Request.RequestType) {
         if service == nil {
             service = NewsFeedService()
         }
         
         switch request {
-        case .some:
-            print(".some interactor")
-        case .getFeed:
-            print(".getFeed interactor")
-            presenter?.presentData(response: .presentNewsFeed)
+        case .getNewsFeed:
+            print(".getNewsFeed interactor")
+            fetcher.getFeed { [weak self] (feedResponse) in
+                guard let feedResponse = feedResponse else { return }
+                self?.presenter?.presentData(response: NewsFeed.Model.Response.ResponseType.presentNewsFeed(feed: feedResponse))
+            }
         }
     }
     

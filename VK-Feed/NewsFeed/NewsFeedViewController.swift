@@ -19,6 +19,8 @@ class NewsFeedViewController: UIViewController, NewsFeedDisplayLogic {
     var interactor: NewsFeedBusinessLogic?
     var router: (NSObjectProtocol & NewsFeedRoutingLogic)?
     
+    private var feedViewModel = FeedViewModel.init(cells: [])
+    
     // MARK: Setup
     
     private func setup() {
@@ -42,17 +44,16 @@ class NewsFeedViewController: UIViewController, NewsFeedDisplayLogic {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        
         table.register(UINib(nibName: "NewsFeedCell", bundle: nil),
                        forCellReuseIdentifier: NewsFeedCell.reuseId)
+        interactor?.makeRequest(request: NewsFeed.Model.Request.RequestType.getNewsFeed)
     }
     
     func displayData(viewModel: NewsFeed.Model.ViewModel.ViewModelData) {
         switch viewModel {
-        case .some:
-            print(".some vc")
-        case .displayNewsFeed:
-            print(".displayNewsFeed vc")
+        case .displayNewsFeed(let feedViewModel):
+            self.feedViewModel = feedViewModel
+            table.reloadData()
         }
     }
 }
@@ -61,17 +62,14 @@ class NewsFeedViewController: UIViewController, NewsFeedDisplayLogic {
 
 extension NewsFeedViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        feedViewModel.cells.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NewsFeedCell.reuseId, for: indexPath) as! NewsFeedCell
+        let cellViewModel = feedViewModel.cells[indexPath.row]
+        cell.set(viewModel: cellViewModel)
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("select row: \(indexPath.row)")
-        interactor?.makeRequest(request: .getFeed)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
