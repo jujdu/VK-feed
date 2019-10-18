@@ -47,7 +47,7 @@ final class NetworkService: Networking {
         var components = URLComponents()
         components.scheme = API.scheme // https
         components.host = API.host // api.vk.com
-        components.path = API.newsFeed // /method/users.get
+        components.path = path // /method/users.get
         components.queryItems = params.map{URLQueryItem(name: $0, value: $1)}// user_ids=210700286&fields=bdate
         
         return components.url!
