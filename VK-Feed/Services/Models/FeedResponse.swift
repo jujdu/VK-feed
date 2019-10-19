@@ -27,10 +27,46 @@ struct FeedItem: Decodable {
     var likes: CountableItem?
     var reposts: CountableItem?
     var views: CountableItem?
+    var attachments: [Attachment]?
 }
 
 struct CountableItem: Decodable {
     let count: Int
+}
+
+struct Attachment: Decodable {
+    var photo: Photo?
+}
+
+struct Photo: Decodable {
+    var sizes: [PhotoSize]
+    
+    var width: Int {
+        return getPropperSize().width
+    }
+    var height: Int {
+        return getPropperSize().height
+    }
+    var srcBIG: String {
+        return getPropperSize().url
+    }
+    
+    private func getPropperSize() -> PhotoSize {
+        if let sizeX = sizes.first(where: { $0.type == "x" }) {
+            return sizeX
+        } else if let fallBackSize = sizes.last {
+            return fallBackSize
+        } else {
+            return PhotoSize(type: "wrong image", url: "wrong image", width: 0, height: 0)
+        }
+    }
+}
+
+struct PhotoSize: Decodable {
+    var type: String
+    var url: String
+    var width: Int
+    var height: Int
 }
 
 protocol ProfileRepresentable {
