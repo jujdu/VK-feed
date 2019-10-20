@@ -8,9 +8,14 @@
 
 import UIKit
 
+protocol NewsFeedCodeCellDelegate: class {
+    func revealPost(for cell: NewsFeedCodeCell)
+}
+
 final class NewsFeedCodeCell: UITableViewCell {
     
     static let reuseId = "NewsFeedCodeCell"
+    weak var delegate: NewsFeedCodeCellDelegate?
     
     //MARK: - First layers
     let cardView: UIView = {
@@ -37,9 +42,19 @@ final class NewsFeedCodeCell: UITableViewCell {
         return label
     }()
     
+    let moreTextButton: UIButton = {
+        let button = UIButton()
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .medium)
+        button.setTitleColor(#colorLiteral(red: 0.4, green: 0.6235294118, blue: 0.831372549, alpha: 1), for: .normal)
+        button.contentHorizontalAlignment = .left
+        button.contentVerticalAlignment = .center
+        button.setTitle("Show more...", for: .normal)
+        return button
+    }()
+    
     let postImageView: WebImageView = {
         let imageView = WebImageView()
-//        imageView.backgroundColor = #colorLiteral(red: 0.8901960784, green: 0.8980392157, blue: 0.9098039216, alpha: 1)
+        //        imageView.backgroundColor = #colorLiteral(red: 0.8901960784, green: 0.8980392157, blue: 0.9098039216, alpha: 1)
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
@@ -53,6 +68,8 @@ final class NewsFeedCodeCell: UITableViewCell {
     let iconImageView: WebImageView = {
         let imageView = WebImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.layer.cornerRadius = Constants.topViewHeight / 2
+        imageView.clipsToBounds = true
         return imageView
     }()
     
@@ -164,10 +181,13 @@ final class NewsFeedCodeCell: UITableViewCell {
         return label
     }()
     
-    //MARK: - Inits
+    //MARK: - ViewCycle
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
+        backgroundColor = .clear
+        selectionStyle = .none
+        
+        moreTextButton.addTarget(self, action: #selector(moreTextButtonTouch), for: .touchUpInside)
         
         overlayFirstLayers()
         overlaySecondLayers()
@@ -178,6 +198,16 @@ final class NewsFeedCodeCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func prepareForReuse() {
+        iconImageView.set(imageUrl: nil)
+        postImageView.set(imageUrl: nil)
+    }
+    
+    //MARK: - Business logic
+    @objc func moreTextButtonTouch() {
+        delegate?.revealPost(for: self)
     }
     
     //MARK: - User Interface
@@ -194,10 +224,7 @@ final class NewsFeedCodeCell: UITableViewCell {
         postLabel.frame = viewModel.sizes.postLabelFrame
         postImageView.frame = viewModel.sizes.attachmentFrame
         bottomView.frame = viewModel.sizes.bottomViewFrame
-        
-        postLabel.frame = viewModel.sizes.postLabelFrame
-        postImageView.frame = viewModel.sizes.attachmentFrame
-        bottomView.frame = viewModel.sizes.bottomViewFrame
+        moreTextButton.frame = viewModel.sizes.moreTextButtonFrame
         
         if let photoAttachment = viewModel.photoAttachment {
             postImageView.set(imageUrl: photoAttachment.photoUrlString)
@@ -219,6 +246,7 @@ final class NewsFeedCodeCell: UITableViewCell {
     private func overlaySecondLayers() {
         cardView.addSubview(topView)
         cardView.addSubview(postLabel)
+        cardView.addSubview(moreTextButton)
         cardView.addSubview(postImageView)
         cardView.addSubview(bottomView)
         
@@ -227,14 +255,6 @@ final class NewsFeedCodeCell: UITableViewCell {
         topView.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 8).isActive = true
         topView.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -8).isActive = true
         topView.heightAnchor.constraint(equalToConstant: Constants.topViewHeight).isActive = true
-        
-        //postLabel Constraints
-        
-        //postImageView Constraints
-        
-        //bottomView Constraints
-        
-        
     }
     
     //MARK: - overlayThirdLayers on topView

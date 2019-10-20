@@ -26,25 +26,32 @@ class NewsFeedPresenter: NewsFeedPresentationLogic {
     func presentData(response: NewsFeed.Model.Response.ResponseType) {
         
         switch response {
-        case .presentNewsFeed(let feed):
+        case .presentNewsFeed(let feed, let revealedPostId):
             let cells = feed.items.map { (feedItem) in
-                cellViewModel(from: feedItem, profiles: feed.profiles, groups: feed.groups)
+                cellViewModel(from: feedItem, profiles: feed.profiles, groups: feed.groups, revealedPostId: revealedPostId)
             }
             let feedViewModel = FeedViewModel.init(cells: cells)
             viewController?.displayData(viewModel: NewsFeed.Model.ViewModel.ViewModelData.displayNewsFeed(feedViewModel: feedViewModel))
         }
     }
     
-    private func cellViewModel(from feedItem: FeedItem, profiles: [Profile], groups: [Group]) -> FeedViewModel.Cell {
+    private func cellViewModel(from feedItem: FeedItem, profiles: [Profile], groups: [Group], revealedPostId: [Int]) -> FeedViewModel.Cell {
         
         let profile = self.profile(for: feedItem.sourceId, profiles: profiles, groups: groups)
         let photoAttachment = self.photoAttachment(feedItem: feedItem)
-        let sizes = cellLayouts.sizes(postText: feedItem.text, attachment: photoAttachment)
         
         let date = Date(timeIntervalSince1970: feedItem.date)
         let dateTitle = dateFormatter.string(from: date)
         
-        return FeedViewModel.Cell.init(iconUrlString: profile.photo,
+//        let isFullSized = revealedPostId.contains { (postId) in
+//            return postId == feedItem.postId
+//        }
+        let isFullSized = revealedPostId.contains(feedItem.postId)
+        
+        let sizes = cellLayouts.sizes(postText: feedItem.text, attachment: photoAttachment, isFullSizedPost: isFullSized)
+        
+        return FeedViewModel.Cell.init(postId: feedItem.postId,
+                                       iconUrlString: profile.photo,
                                        name: profile.name,
                                        date: dateTitle,
                                        text: feedItem.text,

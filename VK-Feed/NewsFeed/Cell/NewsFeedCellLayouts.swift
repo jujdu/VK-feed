@@ -9,11 +9,12 @@
 import UIKit
 
 protocol FeedCellLayoutsProtocol {
-    func sizes(postText: String?, attachment: FeedCellPhotoAttachmentViewModel?) -> FeedCellSizes
+    func sizes(postText: String?, attachment: FeedCellPhotoAttachmentViewModel?, isFullSizedPost: Bool) -> FeedCellSizes
 }
 
 struct Sizes: FeedCellSizes {
     var postLabelFrame: CGRect
+    var moreTextButtonFrame: CGRect
     var attachmentFrame: CGRect
     var bottomViewFrame: CGRect
     var totalHeight: CGFloat
@@ -27,7 +28,9 @@ final class FeedCellLayouts: FeedCellLayoutsProtocol {
         self.screenWidth = screenWidth
     }
     
-    func sizes(postText: String?, attachment: FeedCellPhotoAttachmentViewModel?) -> FeedCellSizes {
+    func sizes(postText: String?, attachment: FeedCellPhotoAttachmentViewModel?, isFullSizedPost: Bool) -> FeedCellSizes {
+        
+        var showMoreTextButton = false
         
         let cardViewWidth = screenWidth - Constants.cardInsets.left - Constants.cardInsets.right
         
@@ -37,11 +40,27 @@ final class FeedCellLayouts: FeedCellLayoutsProtocol {
                                     size: CGSize.zero)
         if let text = postText, !text.isEmpty {
             let width = cardViewWidth - Constants.postLabelInsets.left - Constants.postLabelInsets.right
-            let height = text.height(width: width, font: Constants.postLabelFont)
+            var height = text.height(width: width, font: Constants.postLabelFont)
+            let limitHeight = Constants.postLabelFont.lineHeight * Constants.minPostLimitLines
+            
+            if !isFullSizedPost && height > limitHeight {
+                height = Constants.postLabelFont.lineHeight * Constants.minPostLines
+                showMoreTextButton = true
+            }
+            
             postLabelFrame.size = CGSize(width: width, height: height)
         }
+        
+        // MARK: - Working with moreTextButtomFrame
+        var moreTextButtonSize = CGSize.zero
+        if showMoreTextButton == true {
+            moreTextButtonSize = Constants.moreTextButtonSize
+        }
+        let moreTextButtonOrigin = CGPoint(x: Constants.moreTextButtonInsets.left, y: postLabelFrame.maxY)
+        let moreTextButtonFrame = CGRect(origin: moreTextButtonOrigin, size: moreTextButtonSize)
+        
         // MARK: - Working with attachmentFrame
-        let attachmentTop = postLabelFrame.size == CGSize.zero ? Constants.postLabelInsets.top : postLabelFrame.maxY + Constants.postLabelInsets.bottom
+        let attachmentTop = postLabelFrame.size == CGSize.zero ? Constants.postLabelInsets.top : moreTextButtonFrame.maxY + Constants.postLabelInsets.bottom
         var attachmentFrame = CGRect(origin: CGPoint(x: 0,
                                                      y: attachmentTop),
                                      size: CGSize.zero)
@@ -69,6 +88,7 @@ final class FeedCellLayouts: FeedCellLayoutsProtocol {
         let totalHeight = bottomViewFrame.maxY + Constants.cardInsets.bottom
         
         return Sizes.init(postLabelFrame: postLabelFrame,
+                          moreTextButtonFrame: moreTextButtonFrame,
                           attachmentFrame: attachmentFrame,
                           bottomViewFrame: bottomViewFrame,
                           totalHeight: totalHeight)
